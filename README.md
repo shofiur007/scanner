@@ -5,6 +5,6 @@ PHPScanner is a simple static analysis tool for scanning and detecting XSS and S
 ## usage
 
 ```
-python3 scanner.py -i filename
+python3 scanner.py -i test.php
 
 ```
