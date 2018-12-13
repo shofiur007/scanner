@@ -4,7 +4,7 @@ import getopt
 import logging
 import PatternParser
 import utilities
-import SliceParser
+import FileParser
 import Matcher
 import platform
 
@@ -51,7 +51,7 @@ def main(argv):
     validation = utilities.getVals(patterns)
     sensitiveSinks = utilities.getSinks(patterns)
 
-    slic = SliceParser.fileParser(
+    slic = FileParser.fileParser(
         inputfile, entryPoints, validation, sensitiveSinks)
 
     patt = Matcher.match(slic, patterns)

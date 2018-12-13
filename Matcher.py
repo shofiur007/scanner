@@ -1,5 +1,5 @@
 import logging
-import SliceParser
+import FileParser
 
 logger = logging.getLogger("matchLogger")
 logger.setLevel(logging.WARNING)
